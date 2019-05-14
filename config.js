@@ -7,7 +7,7 @@ config['jsdoc-vuejs'] = config['jsdoc-vuejs'] || {};
 
 // Detect JSDoc template if not specified
 if (!Object.prototype.hasOwnProperty.call(config['jsdoc-vuejs'], 'template')) {
-  config['jsdoc-vuejs'].template = getTemplatePath(env.opts.template || 'default');
+  config['jsdoc-vuejs'].template = getTemplatePath(env.opts.template || 'default',env.opts.configure);
 }
 
 module.exports = config;
